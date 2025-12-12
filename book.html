@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleB.css">    
+    <script src="script.js" defer></script>
+    <title> Riflesso </title>
+</head>
+<body>
+    <nav>   
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#" class="icon-link"> <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="#"> Book </a></li>
+            <li><a href="https://wa.me/393455296503" target="_blank">Informations</a></li>
+            <li><a href="advices.html"> Advices </a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html" class="logo-link"><img src="logoRiflesso.png" alt="Foto" class="logo"></a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+<div class="contact">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+            <h2>Get in touch</h2>
+        </div>
+        <input type="hidden" name="access_key" value="f2e1a9a2-5b6d-4aad-93d9-d034fc35e2df">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <button type="submit" class="button"> Submit </button>
+    </form>
+    <div class="contact-right">
+        <img src="book.img">
+    </div>
+</div>    
+</body>
+</html>
